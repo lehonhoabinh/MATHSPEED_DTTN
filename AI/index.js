@@ -27,7 +27,8 @@ async function askAI() {
   responseBox.textContent = "⏳ AI đang suy nghĩ...";
 
   try {
-    const response = await fetch("http://localhost:3000/api/ask-ai", {
+    const response = await fetch("https://mathspeed-ai.onrender.com/api/ask-ai", {
+
       method: "POST",
       headers: {
         "Content-Type": "application/json"
