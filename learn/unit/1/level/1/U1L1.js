@@ -115,22 +115,7 @@ const questions = [
             Với (4; 0): 3(4) + 4(0) = 12 (Đúng).<br>
             Các cặp còn lại không thỏa mãn.
         `
-    },{
-            question: "Nghiệm của phương trình x - y = 2 là cặp số nào?",
-            answers: [
-                "(4; 2)",      // đúng
-                "(3; 1)",
-                "(5; 4)",
-                "(2; 1)"
-            ],
-            explain: `
-                Thay x = 4, y = 2 vào phương trình:<br>
-                4 - 2 = 2 (Đúng).<br>
-                Các cặp khác không thỏa mãn.<br>
-                <strong>Ví dụ thêm:</strong> (6; 4), (5; 3) cũng là nghiệm.<br>
-                <img src='../../../../assets/images/example_xy2.png' width="200">
-            `
-        }
+    }
 ];
 
 const maxPoint = questions.length;

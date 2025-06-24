@@ -109,7 +109,10 @@ function displayQuestion() {
         units[1].levels[1].state = 'unlock';
         localStorage.setItem('units', JSON.stringify(units));
         alert("Bạn đã hoàn thành tất cả câu hỏi!");
-        document.location.href = '../../../../';
+        let units = JSON.parse(localStorage.getItem('units'));
+units[2].levels[1].state = 'unlock';
+localStorage.setItem('units', JSON.stringify(units'));
+document.location.href = '../../../../';
     }
 
     const { question, answers, explain } = lesson[0];

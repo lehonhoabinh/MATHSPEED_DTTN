@@ -215,6 +215,10 @@ let lesson = [...questions];
 function displayQuestion() {
     if (lesson.length === 0) {
         let units = JSON.parse(localStorage.getItem('units'));
+        units[0].levels[1].state = 'done';
+        localStorage.setItem('units', JSON.stringify(units));
+    
+        let units = JSON.parse(localStorage.getItem('units'));
         units[0].levels[2].state = 'unlock';
         localStorage.setItem('units', JSON.stringify(units));
         alert("Bạn đã hoàn thành tất cả câu hỏi!");

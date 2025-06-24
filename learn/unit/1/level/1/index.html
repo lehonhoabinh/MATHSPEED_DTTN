@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <style>
+        .unit-button {
+            padding: 10px;
+            margin: 5px;
+            background-color: #eee;
+            border-radius: 6px;
+            cursor: pointer;
+            position: relative;
+            transition: background-color 0.3s ease;
+        }
+
+        .unit-button.done {
+            background-color: #d4edda; /* màu xanh lá nhạt */
+            color: #155724;
+            font-weight: bold;
+        }
+
+        .unit-button.done::after {
+            content: "✔";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MathSpeed</title>
